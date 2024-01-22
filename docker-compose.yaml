@@ -11,7 +11,7 @@ services:
       volumes:
         - /etc/localtime:/etc/localtime:ro
         - /var/run/docker.sock:/var/run/docker.sock:ro
-        - ./src/config/config.json:/app/config.json
+        - ./config.json:/app/config.json
         - ./.env.production:/app/.env.production
       # disable if not using traefik
       labels:
